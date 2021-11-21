@@ -1,0 +1,8 @@
+<h1> <span th:text="${numeroresultados}"></span> Resultados encontrados</h1>
+<div th:each="usuario : ${usuarios}" >
+<span th:text="${usuario.id}"></span>
+<span>-</span>
+<span th:text="${usuario.login}"></span>
+<span>-</span>
+<span th:text="${usuario.email}"></span>
+</div>

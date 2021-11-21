@@ -1,0 +1,22 @@
+<h1> <span th:text="${numeroresultados}"></span> Resultados encontrados</h1>
+
+
+<table class="table table-striped table-hover table-sm">
+<thead>
+<tr>
+  <th>ID</th>
+  <th>Nome</th>
+  <th>Email</th>
+
+</tr>
+</thead>
+<tbody>
+  <tr th:each="usuario : ${usuarios}">
+     <td th:text="${usuario.id}">2</td>
+    <td th:text="${usuario.login}">Ana Maria Lindoval</td>
+        <td th:text="${usuario.email}">Ana Maria Lindoval</td>
+
+  </tr>
+</tbody>
+
+</table>

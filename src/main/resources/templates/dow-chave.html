@@ -1,0 +1,19 @@
+<h1> Digite o nome da chave para fazer o download </h1>
+<form>
+  <label for="name">name:</label><br>
+  <input type="text" id="name" name="name"><br>
+</form> 
+<button onClick="Baixar()">Baixar</button>
+
+<script>
+function Baixar() {
+
+
+var name = document.getElementById("name").value;
+
+location.replace("/main/download/"+name);
+
+}
+
+
+</script>
